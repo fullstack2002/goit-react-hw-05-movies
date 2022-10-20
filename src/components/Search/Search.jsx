@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { SearchForm, SearchFormInput, SearchFormButton } from './Search.styled';
 
 export const Search = ({ value, onSubmit }) => {
   const [searchInput, setSearchInput] = useState(value);
@@ -19,8 +20,8 @@ export const Search = ({ value, onSubmit }) => {
         onSubmit(searchInput.trim())
   }
   
-   return <form onSubmit={handleSubmit}>
-        <input
+   return <SearchForm onSubmit={handleSubmit}>
+        <SearchFormInput
             onChange={handleChange}
             type="text"
             name='searchInput'
@@ -29,10 +30,10 @@ export const Search = ({ value, onSubmit }) => {
             autoFocus
             placeholder="Search movies"
         />
-        <button type="submit">
+        <SearchFormButton type="submit">
             Search
-        </button>
-    </form>
+        </SearchFormButton>
+    </SearchForm>
 }
 
 Search.propTypes = {

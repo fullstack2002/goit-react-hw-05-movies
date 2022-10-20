@@ -3,11 +3,12 @@ import styled from '@emotion/styled'
 export const Title = styled.h1`
   margin: 0;
   font-size: 40px;
-  color: #862d59;
+  padding: 10px;
+  color: #3131ac;
 `;
 
 export const HomePageWrapper = styled.div`
-  color: tomato;
+  padding: 20px;
 `;
 
 export const ErrorNotification = styled.p`

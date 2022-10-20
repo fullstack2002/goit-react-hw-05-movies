@@ -3,8 +3,8 @@ import { useSearchParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { fetchSearchData } from '../services/api';
 import { MoviesList } from 'components/MoviesList/MoviesList';
-import { Loader } from 'components/Loader';
-import { Search } from 'components/Search';
+import { Loader } from 'components/Loader/Loader';
+import { Search } from 'components/Search/Search';
 import { HomePageWrapper, ErrorNotification } from '../pages/HomePage/HomePage.styled';
 
 const MoviesPage = () => {
@@ -53,7 +53,7 @@ const MoviesPage = () => {
     <HomePageWrapper>
       <Search onSubmit={changeQuery} value={paramSearch} />
       {loading && <Loader />}
-      {error && <ErrorNotification>Oops! Something went wrong :( Please, reload page and try again</ErrorNotification>}
+      {error && <ErrorNotification>Sorry, we don`t have this movie in our library</ErrorNotification>}
       {isData && <MoviesList items={movies} />}
     </HomePageWrapper>
   )

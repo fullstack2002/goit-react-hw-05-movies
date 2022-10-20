@@ -26,7 +26,7 @@ const HomePage = () => {
   return (
     <HomePageWrapper>
       {!error && <Title>Trending today</Title>}
-      {error && <ErrorNotification>Oops! Something went wrong :( Please, reload page and try again</ErrorNotification>}
+      {error && <ErrorNotification>Sorry, the page is not available at the moment</ErrorNotification>}
       {isData && <MoviesList items={items} />}
     </HomePageWrapper>
   )

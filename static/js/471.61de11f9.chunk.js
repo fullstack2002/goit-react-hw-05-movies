@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[471],{471:function(e,n,t){t.r(n),t.d(n,{default:function(){return l}});t(791);var r,i,a=t(168),o=t(839),c=o.Z.div(r||(r=(0,a.Z)(["\n  padding: 50px;\n"]))),u=o.Z.p(i||(i=(0,a.Z)(["\n  font-size: 30px;\n  text-align: center;\n"]))),h=t(184),l=function(){return(0,h.jsx)(c,{children:(0,h.jsx)(u,{children:"Sorry, we don`t have this movie in our library"})})}}}]);
+//# sourceMappingURL=471.61de11f9.chunk.js.map
